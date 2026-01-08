@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import "./Todolist.css"
+import "./TodoList.css";
 export default function TodoList() {
   const [tasks, setTasks] = useState([{ task: "hello", id: uuidv4(), isdone: false }]);
   const [newTodo, setNewTodo] = useState("");
