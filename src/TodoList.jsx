@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import "./TodoList.css";
+import "./Tudolist.css"
 export default function TodoList() {
   const [tasks, setTasks] = useState([{ task: "hello", id: uuidv4(), isdone: false }]);
   const [newTodo, setNewTodo] = useState("");
@@ -54,7 +54,7 @@ export default function TodoList() {
   };
 
   return (
-    <>
+    <div className="Tododiv">
       <input
         type="text"
         className="inp"
@@ -85,10 +85,10 @@ export default function TodoList() {
           </li>
         ))}
       </ul>
-
+<div className="allbtns">
       <button onClick={convertalluppercase}>Uppercase All</button>
             <button onClick={markasall}>markas All</button>
-
-    </>
+</div>
+    </div>
   );
 }

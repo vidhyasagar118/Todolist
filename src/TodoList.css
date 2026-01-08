@@ -3,6 +3,14 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+.Tododiv{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 body {
   background: #f4f6f8;
@@ -102,4 +110,8 @@ hr {
 button:last-of-type,
 button:nth-last-of-type(2) {
   margin-top: 10px;
+}
+.allbtns{
+  display: flex;
+  flex-direction: row;
 }
