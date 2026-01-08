@@ -1,0 +1,105 @@
+/* Reset & base styles */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+/* Input & Add button */
+.inp {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 8px;
+}
+
+.inp:focus {
+  border-color: #4a90e2;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  margin: 4px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+/* Headings */
+h1 {
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Todo list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+li span {
+  flex: 1;
+  margin-right: 10px;
+  color: #333;
+  word-break: break-word;
+}
+
+/* Buttons inside list */
+li button {
+  background-color: #6c757d;
+}
+
+li button:hover {
+  background-color: #5a6268;
+}
+
+li button:nth-child(3) {
+  background-color: #28a745;
+}
+
+li button:nth-child(3):hover {
+  background-color: #218838;
+}
+
+li button:nth-child(4) {
+  background-color: #dc3545;
+}
+
+li button:nth-child(4):hover {
+  background-color: #c82333;
+}
+
+/* Bottom action buttons */
+hr {
+  margin: 20px 0;
+}
+
+button:last-of-type,
+button:nth-last-of-type(2) {
+  margin-top: 10px;
+}
